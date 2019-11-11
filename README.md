@@ -7,7 +7,7 @@
 --------
 6. Neo4j Server installed (separately somewhere on your system) for running the graph server (https://neo4j.com/download-center/#community)
 7. Neo4j JavaScript driver (```npm install neo4j-driver```) is already installed in this repo.
-
+<!-- 
 ### Backend - Run Steps
 1. Have Ganache running / launched 
 2. ```truffle migrate``` to compile the app
@@ -29,4 +29,4 @@ that hasn't previously voted or hashed with this application
 - Excluding the neo4j steps (commented out currently), the sample voting app should work. 
 - I'm trying to import the neo4j driver at the top of App.js, and invoke neo4j calls in the "castVote" function, lines 117-141 of app.js
 - Trying to figure out how to import the driver with current structure of app.js
-- This is building off of the election sample app https://github.com/dappuniversity/election/tree/2019_update 
+- This is building off of the election sample app https://github.com/dappuniversity/election/tree/2019_update  -->
