@@ -5,18 +5,18 @@ var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 const input = document.querySelector('input[type="file"]')
 input.addEventListener('change', function (e) {
-	console.log(input.files)
-	const reader = new FileReader()
-	reader.onload = function () {
-		const text_blob = reader.result
-		separateChunks(text_blob);
-		// const lines = reader.result.split('\n.').map(function (line) {
-		// 	return line.split(';')
-		// })
-		console.log(lines)
-		console.log(lines.size)
-	}
-	reader.readAsText(input.files[0])
+  console.log(input.files)
+  const reader = new FileReader()
+  reader.onload = function () {
+    const text_blob = reader.result
+    separateChunks(text_blob);
+    // const lines = reader.result.split('\n.').map(function (line) {
+    //  return line.split(';')
+    // })
+    console.log(lines)
+    console.log(lines.size)
+  }
+  reader.readAsText(input.files[0])
 }, false) 
 function separateChunks(text_blob){
     var chunks = text_blob.split('\n.') //chunks is now an array of all the strings inside the chunk
@@ -35,11 +35,12 @@ function separateChunks(text_blob){
         console.log("line", line_counter)
         line_counter++;
         // console.log(lines[j]);                  //prints everything
-        if (lines[j].includes("a prov:Activity")) {
+        if (lines[j].includes("prov:Activity")) {
           current_chunk = "Activity";
           current_name=lines[j-1].trim()
           // console.log(chunks[i])
           // console.log(current_name)
+          // ++numact;
           // console.log(current_chunk);
           let options = {
             label: current_chunk,
@@ -48,7 +49,7 @@ function separateChunks(text_blob){
           build_nodes(options);
           console.log("built a prov Activity")
         }
-        if (lines[j].includes("a prov:Agent")) {
+        if (lines[j].includes("prov:Agent")) {
           current_chunk = "Agent";
           current_name=lines[j-1].trim()
           let options = {
@@ -57,8 +58,19 @@ function separateChunks(text_blob){
           }
           build_nodes(options);
           console.log("built a prov agent")
+            if (lines[j].includes("a foaf")){
+              let subclass_split = lines[j].split(':')
+              let subclass_split2 = subclass_split[1].split(',')
+              options.property= "subclass";
+              options.value = subclass_split2[0];   //The first part of this split is the desired subclass of our "foaf"
+              set_props(options)
+              // if (lines.length > 2) {     // Lines with "," should only be contained in the first line of a prov "Chunk"
+              //   lines[j] = lines[j+1]       //advance to the next line if the chunk size is big enough (no 'seg-faults' will occur)
+              // }
+            }
+
         }
-        if (lines[j].includes("a prov:Entity")) {
+        if (lines[j].includes("prov:Entity")) {
           current_chunk = "Entity";
           current_name=lines[j-1].trim()
           let options = {
@@ -70,15 +82,10 @@ function separateChunks(text_blob){
         }
 //Activity Functions
         if (current_chunk === "Activity") {
-            console.log("Jar")
             let trimmed_line = lines[j].replace(/\s+/g,' ').trim();
-            console.log("trimmed_line: ", trimmed_line)
             let trim_line_array = trimmed_line.split(' ')
-            console.log("trim_line_array: ", trim_line_array)
             let part1 = trim_line_array[0]
-            console.log("part1: ", part1)
             let part2 = trim_line_array[1].slice(0,-1)
-            console.log("part2 ", part2)
 
             if (part1.includes("startedAtTime")) {
                 let options = {
@@ -88,6 +95,7 @@ function separateChunks(text_blob){
                   value: part2
                 }
                 set_props(options)
+              // match (a:current_chunk {name: $current_name}) set a.startedAtTime = "second part of line j"
             }
             
             else if (part1.includes("endedAtTime")) {
@@ -101,6 +109,7 @@ function separateChunks(text_blob){
             }
 
             else if (part1.includes("wasAssociatedWith")){
+              // match (a:current_chunk {name: $current_name}) merge (a)-[wasAssociatedWith]->(b:Agent {name of second part of line j)"
               let options = {
                   label: current_chunk,
                   name: current_name.trim(),
@@ -113,6 +122,7 @@ function separateChunks(text_blob){
             }
 
             else if (part1.includes("used")) {
+              // match (a:current_chunk {name: $current_name}) merge (a)-[used]->(b:Entity {with name of second part of line j)"
                let options = {
                   label: current_chunk,
                   name: current_name,
@@ -132,19 +142,19 @@ function separateChunks(text_blob){
                   value: part2
                 }
                 create_rels(options)
+              // match (a:current_chunk {name: $current_name}) merge (a)-[wasInformedBy]->(b:Activity {with name of second part of line j)"
             }
         
         } //close out "if Activity"
 
         if (current_chunk === "Agent") {
-            let trimmed_line = lines[j].replace(/\s+/g,' ').trim();   // remove extra spaces between lines
-            console.log("trimmed_line: ", trimmed_line)
+          console.log("lines at j" , lines[j])
+            let trimmed_line = lines[j].replace(/\s+/g,' ').trim();   // remove extra spaces between words in a line
             let trim_line_array = trimmed_line.split(' ')
-            console.log("trim_line_array: ", trim_line_array)
             let part1 = trim_line_array[0]
-            console.log("part1: ", part1)
+            console.log(part1)
+            console.log(trim_line_array[0])
             let part2 = trim_line_array[1].slice(0,-1)              //trim off ";" so isn't included in node props.
-            console.log("part2 ", part2)
             if (part1.includes("actedOnBehalfOf")) {
                 let options = {
                   label: current_chunk,
@@ -155,17 +165,24 @@ function separateChunks(text_blob){
                 }
                 create_rels(options)
               }
+            else if (part1.includes("foaf")){
+                let foaf_array = part1.split(':')
+                let options = {
+                  label: current_chunk,
+                  name: current_name,
+                  property: foaf_array[1],
+                  label2: "Agent",
+                  value: part2
+                }
+                set_props(options)
+              }
 
-        }   //close out  "IF Agent"
+        }   //end "IF Agent"
         if (current_chunk === "Entity") {
-            let trimmed_line = lines[j].replace(/\s+/g,' ').trim();   // remove extra spaces between lines
-            // console.log("trimmed_line: ", trimmed_line)
+            let trimmed_line = lines[j].replace(/\s+/g,' ').trim();   // remove extra spaces between words in a line
             let trim_line_array = trimmed_line.split(' ')
-            // console.log("trim_line_array: ", trim_line_array)
             let part1 = trim_line_array[0]
-            // console.log("part1: ", part1)
-            let part2 = trim_line_array[1].slice(0,-1)  //to remove the ";'s" at end of every line
-            // console.log("part2 ", part2)
+            let part2 = trim_line_array[1].slice(0,-1)  //to remove the "semi-colon's"
             if (part1.includes("wasAttributedTo")) {
                 let options = {
                   label: current_chunk,
@@ -198,9 +215,12 @@ function separateChunks(text_blob){
                 }
                 create_rels(options)
             }
-          }   //close out "if ENTITY"
-        }
-      }    
+          }   
+      }
+    }
+    // console.log('Number of Activities:', numact);
+    
+
 } 
 
 //end sepchunk function
@@ -214,7 +234,7 @@ function create_rels(options){
 
       }).then(function (result) {
     result.records.forEach(function (record) {
-      console.log("testing");
+      // console.log("testing");
     });
     session.close();
   })
@@ -230,7 +250,7 @@ function build_nodes(options){
 
       }).then(function (result) {
     result.records.forEach(function (record) {
-      console.log("testing");
+      // console.log("testing");
     });
     session.close();
   })
@@ -248,7 +268,6 @@ function set_props(options){
 
       }).then(function (result) {
     result.records.forEach(function (record) {
-      console.log("testing");
     });
     session.close();
   })
@@ -256,7 +275,6 @@ function set_props(options){
     console.log(error);
   });
 }
-
 
 
 

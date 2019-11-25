@@ -9,7 +9,7 @@
    a foaf:Person, prov:Agent;
    foaf:givenName       "Derek";
    foaf:mbox            <mailto:derek@example.org>;
-   prov:actedOnBehalfOf :natonal_newspaper_inc;
+   prov:actedOnBehalfOf :national_newspaper_inc;
 .
 
 :national_newspaper_inc 
@@ -43,10 +43,14 @@
    a prov:Entity;
    prov:wasAttributedTo :government;
 .
-:government a foaf:Organization, prov:Agent .
+:government 
+   a foaf:Organization, prov:Agent 
+.
 
 :nationalRegionsList 
    a prov:Entity;
    prov:wasAttributedTo :civil_action_group;
 .
-:civil_action_group a foaf:Organization, prov:Agent .
+
+:civil_action_group 
+   a foaf:Organization, prov:Agent 
