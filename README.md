@@ -5,7 +5,7 @@
 - ```npm install --save node-fetch```
 
 # Dependencies:
-- Ensure eo4j Server installed somewhere on your system for running the graph server (https://neo4j.com/download-center/#community). This version was created with v4.0.1
+- Ensure Neo4j Server installed somewhere on your system for running the graph server (https://neo4j.com/download-center/#community). 
 - Make sure when you create your Neo4j password, you update it in config>default.js
 
 # Run:
