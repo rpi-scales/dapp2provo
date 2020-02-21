@@ -1,23 +1,31 @@
 const express = require('express');
 const router = express.Router();
 const { creds } = require('./../../config/default');
-
+let count=0;
 // var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 // const _ = require('lodash');
 const chainModel = require('./../model/chainModel');
 const fetch = require('node-fetch');
-// let xhr = new XMLHttpRequest();
-// xhr.open('GET', "https://ipinfo.io/json", true);
-	// xhr.send();
-	// xhr.onreadystatechange = processRequest;
-	// function processRequest(e) {
-	//     if (xhr.readyState == 4) {
-	//         // time to partay!!!
-	//     }
-	// }
-// var JSONbig = require('json-bigint');
-setInterval(blockchain_test, 7000);
 
+//setInterval(blockchain_test, 7000);
+print_bytecode();
+
+
+async function print_bytecode() {
+  let options = {
+    contract_addr: "0xd26114cd6EE289AccF82350c8d8487fedB8A0C07" //0xef3fbc3e228dbdc523ce5e58530874005553eb2e
+                                                                 //0xd26114cd6EE289AccF82350c8d8487fedB8A0C07
+                                                                //0xd5677cf67b5aa051bb40496e68ad359eb97cfbf8
+ //https://etherscan.io/address/0xd26114cd6EE289AccF82350c8d8487fedB8A0C07#code   yields visible code                                                            
+
+  }
+  if (count <= 1) { 
+    let result = await chainModel.print_bytecode(options);
+    count++;
+  }
+  
+  
+}
 
 async function print_test() {
 	console.log("hi")
@@ -35,6 +43,7 @@ async function print_test() {
 };
 
 async function blockchain_test() {
+  console.log("still running")
 	let data;
   let key = creds.etherscan.api_key;
 

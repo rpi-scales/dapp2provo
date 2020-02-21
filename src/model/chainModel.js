@@ -2,8 +2,19 @@ const { creds } = require('./../../config/default');
 let neo4j = require('neo4j-driver');
 let driver = neo4j.driver("bolt://0.0.0.0:7687", neo4j.auth.basic(creds.database.username, creds.database.password));
 let output_file = 'Output.txt';
+let bytecode_file = 'bytecode.txt';
+const rpcURL = "mainnet.infura.io/v3/acc8856247a34cf8ba30356584ae5b41"
+let Web3 = require('web3');
+// const web3 = new Web3(Web3.givenProvider || rpcURL);
+let web3 = new Web3(
+  // Replace YOUR-PROJECT-ID with a Project ID from your Infura Dashboard
+  new Web3.providers.WebsocketProvider("wss://mainnet.infura.io/ws/v3/acc8856247a34cf8ba30356584ae5b41")
+);
+
+
 const fs = require('fs') 
 fs.writeFile(output_file, '', function(){console.log('Program Starting...\n')})
+fs.writeFile(bytecode_file, '', function(){console.log('')})
 
 exports.graph_test = async function(options) {
     let session = driver.session();
@@ -36,6 +47,41 @@ exports.graph_test = async function(options) {
     return false;
 }
 
+exports.print_bytecode = async function(options) {      //do nothing
+//https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethgetcode
+// console.log("web3",web3);
+if (typeof web3 !== 'undefined') {
+        console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
+        window.web3 = new Web3(web3.currentProvider);
+    }
+console.log("HELLO")
+// let string = web3.eth.getCode(options.contract_addr, function(error, result) {
+//     if(!error) {
+//         console.log("error");
+//     }
+//     else {
+//         console.log("hi hi")
+//     }
+// });
+    let string = web3.eth.getCode("0xd26114cd6EE289AccF82350c8d8487fedB8A0C07");
+    console.log(JSON.stringify(string))
+    fs.writeFileSync(bytecode_file, string+"\n", {flag:'a'});
+
+}
+
+exports.print_last_transaction = async function(options) {      //do nothing
+
+
+    let session = driver.session();
+    let result = await session.run(' ', {
+        
+
+    });
+    //result.records[0].get(0).properties.prop = ;
+    session.close();
+    console.log(result.records)
+    return !result.records.length;
+}
 exports.print_last_transaction = async function(options) {      //do nothing
 
 

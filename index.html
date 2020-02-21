@@ -1,0 +1,23 @@
+<script src = "https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js "></script>
+
+<script>
+window.addEventListener('load', function () {
+    if (typeof web3 !== 'undefined') {
+        console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
+        window.web3 = new Web3(web3.currentProvider);
+    } else {
+        console.log('No Web3 Detected... using HTTP Provider')
+        window.web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/acc8856247a34cf8ba30356584ae5b41"));
+    }
+
+		getCode();
+})
+
+function getCode() {
+	var code = web3.eth.getCode("0xB8c77482e45F1F44dE1745F52C74426C631bDD52", function(error, result) {
+  	if(!error) {
+    	alert(result);
+    }
+  });
+}
+</script>
