@@ -1,10 +1,22 @@
 let express = require('express');
-
+// var http=require("http");  
 
 let chain = require('./src/api/chain');
+let server = require('./src/api/server');
 
 
 let app = express();
+
+// var server = http.createServer(function(request, response) {  
+//     response.writeHead(200, {  
+//         'Content-Type': 'text/plain'  
+//     }); 
+    
+//     let j = 1000
+//     response.write("This is Test Message.\n"+j); 
+//     response.end();  
+// }); 
+// server.listen(8080);  
 
 
 // view engine setup
@@ -25,6 +37,9 @@ app.use(function(req, res, next) {
 });
 
 app.use('/chain', chain)
+app.use('/server', server)
+
+
 
 
 

@@ -7,8 +7,9 @@ let count=0;
 const chainModel = require('./../model/chainModel');
 const fetch = require('node-fetch');
 
-//setInterval(blockchain_test, 7000);
-print_bytecode();
+setInterval(blockchain_test, 7000);
+// setInterval(keep_running, 7000);
+// print_bytecode();
 
 
 async function print_bytecode() {
@@ -19,6 +20,7 @@ async function print_bytecode() {
  //https://etherscan.io/address/0xd26114cd6EE289AccF82350c8d8487fedB8A0C07#code   yields visible code                                                            
 
   }
+  console.log("line22")
   if (count <= 1) { 
     let result = await chainModel.print_bytecode(options);
     count++;
@@ -26,7 +28,9 @@ async function print_bytecode() {
   
   
 }
-
+// async function keep_running() {
+//   console.log("Still Running...")
+// }
 async function print_test() {
 	console.log("hi")
 	let options = {
@@ -78,6 +82,34 @@ async function blockchain_test() {
 	return true;
 	// res.status(200).json({
  //    	transaction: test_transaction
+ //  });
+};
+async function print_source_code() {
+  console.log("still running")
+  let data;
+  let key = creds.etherscan.api_key;
+  fetch(`https://api.etherscan.io/api?module=contract&action=getsourcecode&address=0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413&apikey=${key}`)
+    .then(response => response.json())
+    .then(async data => {
+      // console.log("data retrievable")
+      let options = {     //get from/to/value for first transaction.
+        source_code: data.result[0].SourceCode,
+      }
+      console.log("source_code:", source_code)
+     
+      let test_blockchain = await chainModel.graph_test(options);
+
+      // console.log(data)
+      })
+
+  .catch(err => {
+    console.log(err);
+  })
+  // let test_transaction = await chainModel.graph_test(options);
+
+  return true;
+  // res.status(200).json({
+ //     transaction: test_transaction
  //  });
 };
 

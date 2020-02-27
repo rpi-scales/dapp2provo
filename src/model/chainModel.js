@@ -8,7 +8,8 @@ let Web3 = require('web3');
 // const web3 = new Web3(Web3.givenProvider || rpcURL);
 let web3 = new Web3(
   // Replace YOUR-PROJECT-ID with a Project ID from your Infura Dashboard
-  new Web3.providers.WebsocketProvider("wss://mainnet.infura.io/ws/v3/acc8856247a34cf8ba30356584ae5b41")
+  new Web3.providers.WebsocketProvider("wss://mainnet.infura.io/v3/acc8856247a34cf8ba30356584ae5b41")
+  //new Web3.providers.WebsocketProvider("wss://mainnet.infura.io/ws/v3/acc8856247a34cf8ba30356584ae5b41")
 );
 
 
@@ -52,7 +53,7 @@ exports.print_bytecode = async function(options) {      //do nothing
 // console.log("web3",web3);
 if (typeof web3 !== 'undefined') {
         console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
-        window.web3 = new Web3(web3.currentProvider);
+        // window.web3 = new Web3(web3.currentProvider);
     }
 console.log("HELLO")
 // let string = web3.eth.getCode(options.contract_addr, function(error, result) {
@@ -64,8 +65,12 @@ console.log("HELLO")
 //     }
 // });
     let string = web3.eth.getCode("0xd26114cd6EE289AccF82350c8d8487fedB8A0C07");
-    console.log(JSON.stringify(string))
-    fs.writeFileSync(bytecode_file, string+"\n", {flag:'a'});
+    string.then((result) => {
+        console.log(result);
+        fs.writeFileSync(bytecode_file, result+"\n", {flag:'a'});
+        });
+    // console.log(JSON.stringify(string))
+    // fs.writeFileSync(bytecode_file, string+"\n", {flag:'a'});
 
 }
 
