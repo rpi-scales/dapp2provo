@@ -20,7 +20,7 @@ fs.writeFile(bytecode_file, '', function(){console.log('')})
 exports.graph_test = async function(options) {
     let session = driver.session();
 
-    let result = await session.run('MERGE (a:account {address: $from}) MERGE (b:account {address: $to}) MERGE (c:account {address: $miner}) MERGE (c)-[:MINED]->(d:block {height: $height, difficulty: $difficulty})-[:FACILITATED]->(a)-[:SENT {value: $value}]->(b) return a', {
+    let result = await session.run('MERGE (a:eth_account {address: $from}) MERGE (b:eth_account {address: $to}) MERGE (c:eth_account {address: $miner}) MERGE (c)-[:MINED]->(d:block {height: $height, difficulty: $difficulty})-[:FACILITATED]->(a)-[:SENT {value: $value}]->(b) return a', {
        	miner: options.miner,
 		height: options.height,
 		difficulty: options.difficulty,

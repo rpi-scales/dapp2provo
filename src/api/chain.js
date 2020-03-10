@@ -7,9 +7,11 @@ let count=0;
 const chainModel = require('./../model/chainModel');
 const fetch = require('node-fetch');
 
-setInterval(blockchain_test, 7000);
+// setInterval(blockchain_test, 7000);
 // setInterval(keep_running, 7000);
+// blockchain_test();
 // print_bytecode();
+create_full_block();
 
 
 async function print_bytecode() {
@@ -84,6 +86,49 @@ async function blockchain_test() {
  //    	transaction: test_transaction
  //  });
 };
+
+async function create_full_block() {
+  console.log("still running")
+  let data;
+  let key = creds.etherscan.api_key;
+//blockheight 0x91F2E2  or 9564898 has 212 transactions within it.
+  fetch(`https://api.etherscan.io/api?module=proxy&action=eth_getBlockByNumber&tag=&boolean=true&apikey=${key}`)
+    .then(response => response.json())
+    .then(async data => {
+      console.log("# TRANSACTIONS IN BLOCK "+parseInt(data.result.size)+" IS: "+data.result.transactions.length)
+
+      let options = {     //get from/to/value for first transaction.
+        miner: data.result.miner,
+        height: parseInt(data.result.size),
+        difficulty: parseInt(data.result.difficulty),
+        num_transactions: data.result.transactions.length,
+        from: data.result.transactions[0].from,
+        to: data.result.transactions[0].to,
+        value: parseInt(data.result.transactions[0].value)
+      }
+      console.log("MINER:", options.miner)
+      console.log("num_transactions:", options.num_transactions)
+      console.log("Block Height:", options.height)
+      console.log("Difficulty:", options.difficulty)
+
+      let test_blockchain = await chainModel.graph_test(options);
+
+      // console.log(data)
+      })
+
+  .catch(err => {
+    console.log(err);
+  })
+  // let test_transaction = await chainModel.graph_test(options);
+
+  return true;
+  // res.status(200).json({
+ //     transaction: test_transaction
+ //  });
+};
+
+
+
 async function print_source_code() {
   console.log("still running")
   let data;

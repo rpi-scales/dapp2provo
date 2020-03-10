@@ -17,3 +17,4 @@ e.g. ```My-MacBook-Pro:neo4j-community-3.5.3 me$ bin neo4j/console```
 
 # View on Public IP:
 - A sample neo4j instance is available for viewing at http://3.16.111.243:7474/browser/ (if prompted, check boxnote for password)
+- Contract bytecode from the contract input on 
