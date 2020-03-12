@@ -12,7 +12,7 @@ let web3 = new Web3(
   //new Web3.providers.WebsocketProvider("wss://mainnet.infura.io/ws/v3/acc8856247a34cf8ba30356584ae5b41")
 );
 const fs = require('fs') 
-fs.writeFile(output_file, '', function(){console.log('Program Starting...\n')})
+fs.writeFile(output_file, '', function(){console.log('Program Starting... Check Output.txt in 10 seconds\n')})
 fs.writeFile(bytecode_file, '', function(){console.log('')})//clear out the existing file
 
 exports.mergeBlock = async function(options){
@@ -27,12 +27,13 @@ exports.mergeBlock = async function(options){
 
 exports.outputTransaction = async function(transaction) {
 	console.log("Output transactionmodel")
-	let string = `:transaction${transaction.hash.substring(0,15)}\n\t a prov:Activity;\n\t prov:generated :block${transaction.height}\n\t foaf:value ${parseInt(transaction.value)};\n\t prov:wasStartedBy :senderAgent${transaction.from.substring(0,10)}\n\t prov:wasEndedBy :receiverAgent${transaction.to.substring(0,10)}\n`
+	let string = `:transaction${transaction.hash.substring(0,15)}\n\t a prov:Activity;\n\t prov:generated :block${transaction.height}\n\t foaf:value ${parseInt(transaction.value)};\n\t prov:wasStartedBy :senderAgent${transaction.from.substring(0,10)}\n\t prov:wasEndedBy :receiverAgent${transaction.to.substring(0,10)};\n`
 	fs.writeFileSync(output_file, string+"\n"+".\n", {flag:'a'});
 //create the sender and receiver agents!
 }
 
 exports.outputContract = async function(transaction) {
 
-console.log("Output Contract fxn not created yet")
+	let string = `:contract${transaction.hash.substring(0,15)}\n\t a prov:Activity;\n\t prov:generated :block${transaction.height}\n\t foaf:contract_address ${transaction.to};\n\t prov:wasStartedBy :senderAgent${transaction.from.substring(0,10)};\n\t`
+	fs.writeFileSync(output_file, string+"\n"+".\n", {flag:'a'});
 }
