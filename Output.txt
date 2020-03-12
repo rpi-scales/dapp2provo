@@ -1,0 +1,1050 @@
+:block29783
+	 a prov:Entity;
+	 foaf:blockHash: undefined;
+	 foaf:miner 0xea674fdde714fd979de3edf0f56aa9716b898ec8;
+	 prov:wasDerivedFrom :block29782;
+.
+:transaction0x984562fcc52e9
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 10076825270000000000;
+	 prov:wasStartedBy :senderAgent0x46ace8d3
+	 prov:wasEndedBy :receiverAgent0x0b8cf1ec
+
+.
+:transaction0x9aeae81a58b9b
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 276470000000000000;
+	 prov:wasStartedBy :senderAgent0xec964f9f
+	 prov:wasEndedBy :receiverAgent0xf565c5f7
+
+.
+:transaction0x21651edb13e56
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 7000000000000000;
+	 prov:wasStartedBy :senderAgent0xbe060c06
+	 prov:wasEndedBy :receiverAgent0xef8f15f0
+
+.
+:transaction0x33cc182446b39
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 824420000000000;
+	 prov:wasStartedBy :senderAgent0x0360c8e2
+	 prov:wasEndedBy :receiverAgent0xc3e03438
+
+.
+:transaction0x6a26277b3d6c8
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 100000000000000000;
+	 prov:wasStartedBy :senderAgent0x26394801
+	 prov:wasEndedBy :receiverAgent0x39057b11
+
+.
+:transaction0x817decdd17fef
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 49980000000000000000;
+	 prov:wasStartedBy :senderAgent0xa7efae72
+	 prov:wasEndedBy :receiverAgent0x5ba5beed
+
+.
+:transaction0x6f505ec9b0cb3
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 200000000000000000;
+	 prov:wasStartedBy :senderAgent0xa7efae72
+	 prov:wasEndedBy :receiverAgent0xed9024e0
+
+.
+:transaction0x509c9f7449b19
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 19999000000000000;
+	 prov:wasStartedBy :senderAgent0x5d90af90
+	 prov:wasEndedBy :receiverAgent0x489773ac
+
+.
+:transaction0x574c1ba15b552
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 46636628446252520;
+	 prov:wasStartedBy :senderAgent0x7574d8ca
+	 prov:wasEndedBy :receiverAgent0x85cdc779
+
+.
+:transaction0x1456181f62eeb
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 23503150000000000000;
+	 prov:wasStartedBy :senderAgent0x94e82a29
+	 prov:wasEndedBy :receiverAgent0xefebc9bd
+
+.
+:transaction0x43de6aac0d7db
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 2546858540000000000;
+	 prov:wasStartedBy :senderAgent0xda466bf1
+	 prov:wasEndedBy :receiverAgent0x688439c6
+
+.
+:transaction0x13cb566ebbe9e
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 99999265000000000000;
+	 prov:wasStartedBy :senderAgent0x2c248658
+	 prov:wasEndedBy :receiverAgent0x2819c144
+
+.
+:transaction0x29773b641ba4e
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 1748437547100000;
+	 prov:wasStartedBy :senderAgent0x00bd3349
+	 prov:wasEndedBy :receiverAgent0x61cdd31d
+
+.
+:transaction0xf3f101064dd81
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 2000000000000000;
+	 prov:wasStartedBy :senderAgent0x844461f9
+	 prov:wasEndedBy :receiverAgent0xbc63d0a7
+
+.
+:transaction0x39b62cb8a8481
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 2000000000000000;
+	 prov:wasStartedBy :senderAgent0x844461f9
+	 prov:wasEndedBy :receiverAgent0x7bc20d16
+
+.
+:transaction0x082ba61bd23e7
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 2000000000000000;
+	 prov:wasStartedBy :senderAgent0x844461f9
+	 prov:wasEndedBy :receiverAgent0x47ef0ac1
+
+.
+:transaction0x689853ac23234
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 49525206435536600;
+	 prov:wasStartedBy :senderAgent0x51c26a6b
+	 prov:wasEndedBy :receiverAgent0x4fed1fc4
+
+.
+:transaction0x684a458ef421d
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 700507000000000000;
+	 prov:wasStartedBy :senderAgent0xd1bc4a8c
+	 prov:wasEndedBy :receiverAgent0x926fc576
+
+.
+:transaction0xf7ac1089bd051
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 1980000000000000;
+	 prov:wasStartedBy :senderAgent0x275f180b
+	 prov:wasEndedBy :receiverAgent0x4331d1a1
+
+.
+:transaction0x7760cfdbf9a03
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 2310000000000000;
+	 prov:wasStartedBy :senderAgent0xc5b8a59f
+	 prov:wasEndedBy :receiverAgent0xbcc86da1
+
+.
+:transaction0x693b45121a46b
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 4620000000000000;
+	 prov:wasStartedBy :senderAgent0x18916e1a
+	 prov:wasEndedBy :receiverAgent0x67d4a2dc
+
+.
+:transaction0x180d80de4e43a
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 9999000000000000;
+	 prov:wasStartedBy :senderAgent0x18916e1a
+	 prov:wasEndedBy :receiverAgent0x22852cdf
+
+.
+:transaction0xb19fe70a3297c
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 4620000000000000;
+	 prov:wasStartedBy :senderAgent0x18916e1a
+	 prov:wasEndedBy :receiverAgent0xe059c102
+
+.
+:transaction0xb2e925136b20d
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 1981617423000000000;
+	 prov:wasStartedBy :senderAgent0x0982cf0e
+	 prov:wasEndedBy :receiverAgent0x137ad9c4
+
+.
+:transaction0x2e9dc47cba80b
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 690507000000000000;
+	 prov:wasStartedBy :senderAgent0xbf0bd462
+	 prov:wasEndedBy :receiverAgent0x034f854b
+
+.
+:transaction0x91598c57cc6b5
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 2601421327000000000;
+	 prov:wasStartedBy :senderAgent0xd2c809fe
+	 prov:wasEndedBy :receiverAgent0x034f854b
+
+.
+:transaction0x94e5ff0b67c86
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 79996307000000000000;
+	 prov:wasStartedBy :senderAgent0x9e68360f
+	 prov:wasEndedBy :receiverAgent0x9c19b049
+
+.
+:transaction0x48bbbfc9fa8ad
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 506393670613936960;
+	 prov:wasStartedBy :senderAgent0x616945b5
+	 prov:wasEndedBy :receiverAgent0x4fed1fc4
+
+.
+:transaction0x2e5de2909407b
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 761844000000000;
+	 prov:wasStartedBy :senderAgent0x937effef
+	 prov:wasEndedBy :receiverAgent0xd61f90a4
+
+.
+:transaction0x77b7f104eaebe
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 826649808442948600;
+	 prov:wasStartedBy :senderAgent0x61d34885
+	 prov:wasEndedBy :receiverAgent0xac54b0f5
+
+.
+:transaction0x1d9eec7c81658
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 3305244774291211000;
+	 prov:wasStartedBy :senderAgent0x61d34885
+	 prov:wasEndedBy :receiverAgent0x74381d45
+
+.
+:transaction0x2627992e20a8a
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 354400472000000000;
+	 prov:wasStartedBy :senderAgent0x46aa2c2a
+	 prov:wasEndedBy :receiverAgent0xac54b0f5
+
+.
+:transaction0xc3dc5cb80e204
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 1050000000000000000;
+	 prov:wasStartedBy :senderAgent0xb351fb69
+	 prov:wasEndedBy :receiverAgent0xfe63eab7
+
+.
+:transaction0x5f916e654a472
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 354765860000000000;
+	 prov:wasStartedBy :senderAgent0x62347bf6
+	 prov:wasEndedBy :receiverAgent0x5e5d8e68
+
+.
+:transaction0x8963d7dd8e8ca
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 93402825652077120;
+	 prov:wasStartedBy :senderAgent0x91c9f45a
+	 prov:wasEndedBy :receiverAgent0xeaf9a468
+
+.
+:transaction0x0392612d25043
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 7949927095795513;
+	 prov:wasStartedBy :senderAgent0xf083f083
+	 prov:wasEndedBy :receiverAgent0xff33fff0
+
+.
+:transaction0xe770493be61ca
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 660840850000000000;
+	 prov:wasStartedBy :senderAgent0x1395723e
+	 prov:wasEndedBy :receiverAgent0xd6504836
+
+.
+:transaction0x118c08c7a723b
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 151000000000000000000;
+	 prov:wasStartedBy :senderAgent0x914d7444
+	 prov:wasEndedBy :receiverAgent0x18e8d254
+
+.
+:transaction0x932e87466a76d
+	 a prov:Activity;
+	 prov:generated :block29783
+	 foaf:value 2300000000000000000;
+	 prov:wasStartedBy :senderAgent0x40027648
+	 prov:wasEndedBy :receiverAgent0x00b5c12e
+
+.
+:block39160
+	 a prov:Entity;
+	 foaf:blockHash: undefined;
+	 foaf:miner 0x04668ec2f57cc15c381b461b9fedab5d451c8f7f;
+	 prov:wasDerivedFrom :block39159;
+.
+:transaction0x656f6f6e12f65
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 23390660108558590;
+	 prov:wasStartedBy :senderAgent0x5f5424cc
+	 prov:wasEndedBy :receiverAgent0xe8294b56
+
+.
+:transaction0xf853a2d334121
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 6765625031400000;
+	 prov:wasStartedBy :senderAgent0x24e4b359
+	 prov:wasEndedBy :receiverAgent0x820659e1
+
+.
+:transaction0x3ee003254a82f
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 20863000000000000;
+	 prov:wasStartedBy :senderAgent0x3de250ba
+	 prov:wasEndedBy :receiverAgent0x56d3a91e
+
+.
+:transaction0x1451b536e434f
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1944453371703000;
+	 prov:wasStartedBy :senderAgent0x3c130d0d
+	 prov:wasEndedBy :receiverAgent0xd61f90a4
+
+.
+:transaction0x01503d74ef95a
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 823940000000000;
+	 prov:wasStartedBy :senderAgent0x7df4edbf
+	 prov:wasEndedBy :receiverAgent0x70e57fcb
+
+.
+:transaction0xb634ba51c00a6
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0x4b1a187d
+	 prov:wasEndedBy :receiverAgent0x4b1a187d
+
+.
+:transaction0xaff28787233d0
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0x28849b0d
+	 prov:wasEndedBy :receiverAgent0x28849b0d
+
+.
+:transaction0x176295f2dc953
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xfa393661
+	 prov:wasEndedBy :receiverAgent0xfa393661
+
+.
+:transaction0xfffa7df1e7f20
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xe5cc33f3
+	 prov:wasEndedBy :receiverAgent0xe5cc33f3
+
+.
+:transaction0xd5d0f94228975
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xe5cc33f3
+	 prov:wasEndedBy :receiverAgent0xe5cc33f3
+
+.
+:transaction0x2a42624856481
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xe5cc33f3
+	 prov:wasEndedBy :receiverAgent0xe5cc33f3
+
+.
+:transaction0x02d11def34ce8
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 2897244920000000000;
+	 prov:wasStartedBy :senderAgent0x9e540dd1
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0xca299d728ba4e
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 2000000000000000000;
+	 prov:wasStartedBy :senderAgent0x120c28bf
+	 prov:wasEndedBy :receiverAgent0xfd1257d6
+
+.
+:transaction0xc6979981ca938
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 4995195000000000000;
+	 prov:wasStartedBy :senderAgent0x29846b4a
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0xc389b60400cb4
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 116740600000000000;
+	 prov:wasStartedBy :senderAgent0x3598c1bc
+	 prov:wasEndedBy :receiverAgent0x447f7de6
+
+.
+:transaction0x4ea27de09b3b6
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 500000000000000;
+	 prov:wasStartedBy :senderAgent0x4787e90b
+	 prov:wasEndedBy :receiverAgent0x106d90b7
+
+.
+:transaction0x5f4227e201ae4
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 93737000000000000;
+	 prov:wasStartedBy :senderAgent0xb32bff33
+	 prov:wasEndedBy :receiverAgent0x012d00e2
+
+.
+:transaction0x4f4472b9a3e13
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 41072581118347710;
+	 prov:wasStartedBy :senderAgent0x104341c6
+	 prov:wasEndedBy :receiverAgent0x9ca773a3
+
+.
+:transaction0x57bc9d0f48a2d
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 6000000000000000000;
+	 prov:wasStartedBy :senderAgent0x8d264f5d
+	 prov:wasEndedBy :receiverAgent0x74f7d351
+
+.
+:transaction0xce718ecf38cbf
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 4000000000000000;
+	 prov:wasStartedBy :senderAgent0x51597485
+	 prov:wasEndedBy :receiverAgent0xae9a0036
+
+.
+:transaction0xb3186fc235cd0
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1021001690000000000;
+	 prov:wasStartedBy :senderAgent0x51597485
+	 prov:wasEndedBy :receiverAgent0x143d1d27
+
+.
+:transaction0xe9b76ff67bf63
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 58370300000000000;
+	 prov:wasStartedBy :senderAgent0xffc2e68a
+	 prov:wasEndedBy :receiverAgent0xe558f287
+
+.
+:transaction0x3c6dd65ca9ee0
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 993195000000000000;
+	 prov:wasStartedBy :senderAgent0x6b62f58c
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x82c865220e4ba
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 2249977260000000000;
+	 prov:wasStartedBy :senderAgent0x6c4c591f
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x483952be207d6
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 303000000000000000;
+	 prov:wasStartedBy :senderAgent0x49ffe4d2
+	 prov:wasEndedBy :receiverAgent0x8466b759
+
+.
+:transaction0x87576b7eaf0d3
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 3816793890000000000;
+	 prov:wasStartedBy :senderAgent0xd55d743d
+	 prov:wasEndedBy :receiverAgent0x612f7ac2
+
+.
+:transaction0x1097eb3b03454
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xfa393661
+	 prov:wasEndedBy :receiverAgent0x163b9279
+
+.
+:transaction0x990e25aa6db0a
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xfa393661
+	 prov:wasEndedBy :receiverAgent0xfa393661
+
+.
+:transaction0xedc57d94a2819
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1069000000000000000;
+	 prov:wasStartedBy :senderAgent0x21d8dae7
+	 prov:wasEndedBy :receiverAgent0x7e9843f8
+
+.
+:transaction0x640fc6667aafc
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 5992055000000000000;
+	 prov:wasStartedBy :senderAgent0xc56f85c6
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x927f10e19c280
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 966485100000000000;
+	 prov:wasStartedBy :senderAgent0x9b3c0d9d
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x22791be46ac83
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1850000000000000;
+	 prov:wasStartedBy :senderAgent0x7a63dfdb
+	 prov:wasEndedBy :receiverAgent0xaf5e4208
+
+.
+:transaction0x136a4f41ea776
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 4756324730000000000;
+	 prov:wasStartedBy :senderAgent0xc4c9bd18
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x800d5b6788271
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 997801000000000000;
+	 prov:wasStartedBy :senderAgent0x30be37d6
+	 prov:wasEndedBy :receiverAgent0x5401dbf7
+
+.
+:transaction0xf05d553281abb
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1100000000000000000;
+	 prov:wasStartedBy :senderAgent0x1300fd42
+	 prov:wasEndedBy :receiverAgent0x88160178
+
+.
+:transaction0x114c7bbe6253c
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1339601000000000000;
+	 prov:wasStartedBy :senderAgent0x4773ec09
+	 prov:wasEndedBy :receiverAgent0x7ef35bb3
+
+.
+:transaction0x1b5990cef591f
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 53430660000000000;
+	 prov:wasStartedBy :senderAgent0x77f8d311
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x47e7a132bc7fa
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 109197717569063500;
+	 prov:wasStartedBy :senderAgent0xa9c7d31b
+	 prov:wasEndedBy :receiverAgent0xcd9625a2
+
+.
+:transaction0x7d037c889e3ee
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 10000000000000000000;
+	 prov:wasStartedBy :senderAgent0x9b1b97d7
+	 prov:wasEndedBy :receiverAgent0xfb527e6a
+
+.
+:transaction0xd0c21ce853da1
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 6315105140247040000;
+	 prov:wasStartedBy :senderAgent0x29e734ae
+	 prov:wasEndedBy :receiverAgent0xb9ee1e55
+
+.
+:transaction0x4e98f1d73df8f
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 99996606380247040000;
+	 prov:wasStartedBy :senderAgent0x2d234969
+	 prov:wasEndedBy :receiverAgent0xb9ee1e55
+
+.
+:transaction0x176e766509eed
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 5123000000000000;
+	 prov:wasStartedBy :senderAgent0x40f67c38
+	 prov:wasEndedBy :receiverAgent0x906d4e8e
+
+.
+:transaction0x96e6d88149347
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 5123000000000000;
+	 prov:wasStartedBy :senderAgent0x40f67c38
+	 prov:wasEndedBy :receiverAgent0xde6bdda6
+
+.
+:transaction0x7ead50a93fb2a
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 471151010000000000;
+	 prov:wasStartedBy :senderAgent0x4c4bd346
+	 prov:wasEndedBy :receiverAgent0x2d51db5b
+
+.
+:transaction0xc0b16b298a133
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0x2f53fc0f
+	 prov:wasEndedBy :receiverAgent0x2f53fc0f
+
+.
+:block39160
+	 a prov:Entity;
+	 foaf:blockHash: undefined;
+	 foaf:miner 0x04668ec2f57cc15c381b461b9fedab5d451c8f7f;
+	 prov:wasDerivedFrom :block39159;
+.
+:transaction0x656f6f6e12f65
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 23390660108558590;
+	 prov:wasStartedBy :senderAgent0x5f5424cc
+	 prov:wasEndedBy :receiverAgent0xe8294b56
+
+.
+:transaction0xf853a2d334121
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 6765625031400000;
+	 prov:wasStartedBy :senderAgent0x24e4b359
+	 prov:wasEndedBy :receiverAgent0x820659e1
+
+.
+:transaction0x3ee003254a82f
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 20863000000000000;
+	 prov:wasStartedBy :senderAgent0x3de250ba
+	 prov:wasEndedBy :receiverAgent0x56d3a91e
+
+.
+:transaction0x1451b536e434f
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1944453371703000;
+	 prov:wasStartedBy :senderAgent0x3c130d0d
+	 prov:wasEndedBy :receiverAgent0xd61f90a4
+
+.
+:transaction0x01503d74ef95a
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 823940000000000;
+	 prov:wasStartedBy :senderAgent0x7df4edbf
+	 prov:wasEndedBy :receiverAgent0x70e57fcb
+
+.
+:transaction0xb634ba51c00a6
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0x4b1a187d
+	 prov:wasEndedBy :receiverAgent0x4b1a187d
+
+.
+:transaction0xaff28787233d0
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0x28849b0d
+	 prov:wasEndedBy :receiverAgent0x28849b0d
+
+.
+:transaction0x176295f2dc953
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xfa393661
+	 prov:wasEndedBy :receiverAgent0xfa393661
+
+.
+:transaction0xfffa7df1e7f20
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xe5cc33f3
+	 prov:wasEndedBy :receiverAgent0xe5cc33f3
+
+.
+:transaction0xd5d0f94228975
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xe5cc33f3
+	 prov:wasEndedBy :receiverAgent0xe5cc33f3
+
+.
+:transaction0x2a42624856481
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xe5cc33f3
+	 prov:wasEndedBy :receiverAgent0xe5cc33f3
+
+.
+:transaction0x02d11def34ce8
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 2897244920000000000;
+	 prov:wasStartedBy :senderAgent0x9e540dd1
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0xca299d728ba4e
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 2000000000000000000;
+	 prov:wasStartedBy :senderAgent0x120c28bf
+	 prov:wasEndedBy :receiverAgent0xfd1257d6
+
+.
+:transaction0xc6979981ca938
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 4995195000000000000;
+	 prov:wasStartedBy :senderAgent0x29846b4a
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0xc389b60400cb4
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 116740600000000000;
+	 prov:wasStartedBy :senderAgent0x3598c1bc
+	 prov:wasEndedBy :receiverAgent0x447f7de6
+
+.
+:transaction0x4ea27de09b3b6
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 500000000000000;
+	 prov:wasStartedBy :senderAgent0x4787e90b
+	 prov:wasEndedBy :receiverAgent0x106d90b7
+
+.
+:transaction0x5f4227e201ae4
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 93737000000000000;
+	 prov:wasStartedBy :senderAgent0xb32bff33
+	 prov:wasEndedBy :receiverAgent0x012d00e2
+
+.
+:transaction0x4f4472b9a3e13
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 41072581118347710;
+	 prov:wasStartedBy :senderAgent0x104341c6
+	 prov:wasEndedBy :receiverAgent0x9ca773a3
+
+.
+:transaction0x57bc9d0f48a2d
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 6000000000000000000;
+	 prov:wasStartedBy :senderAgent0x8d264f5d
+	 prov:wasEndedBy :receiverAgent0x74f7d351
+
+.
+:transaction0xce718ecf38cbf
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 4000000000000000;
+	 prov:wasStartedBy :senderAgent0x51597485
+	 prov:wasEndedBy :receiverAgent0xae9a0036
+
+.
+:transaction0xb3186fc235cd0
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1021001690000000000;
+	 prov:wasStartedBy :senderAgent0x51597485
+	 prov:wasEndedBy :receiverAgent0x143d1d27
+
+.
+:transaction0xe9b76ff67bf63
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 58370300000000000;
+	 prov:wasStartedBy :senderAgent0xffc2e68a
+	 prov:wasEndedBy :receiverAgent0xe558f287
+
+.
+:transaction0x3c6dd65ca9ee0
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 993195000000000000;
+	 prov:wasStartedBy :senderAgent0x6b62f58c
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x82c865220e4ba
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 2249977260000000000;
+	 prov:wasStartedBy :senderAgent0x6c4c591f
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x483952be207d6
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 303000000000000000;
+	 prov:wasStartedBy :senderAgent0x49ffe4d2
+	 prov:wasEndedBy :receiverAgent0x8466b759
+
+.
+:transaction0x87576b7eaf0d3
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 3816793890000000000;
+	 prov:wasStartedBy :senderAgent0xd55d743d
+	 prov:wasEndedBy :receiverAgent0x612f7ac2
+
+.
+:transaction0x1097eb3b03454
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xfa393661
+	 prov:wasEndedBy :receiverAgent0x163b9279
+
+.
+:transaction0x990e25aa6db0a
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0xfa393661
+	 prov:wasEndedBy :receiverAgent0xfa393661
+
+.
+:transaction0xedc57d94a2819
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1069000000000000000;
+	 prov:wasStartedBy :senderAgent0x21d8dae7
+	 prov:wasEndedBy :receiverAgent0x7e9843f8
+
+.
+:transaction0x640fc6667aafc
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 5992055000000000000;
+	 prov:wasStartedBy :senderAgent0xc56f85c6
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x927f10e19c280
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 966485100000000000;
+	 prov:wasStartedBy :senderAgent0x9b3c0d9d
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x22791be46ac83
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1850000000000000;
+	 prov:wasStartedBy :senderAgent0x7a63dfdb
+	 prov:wasEndedBy :receiverAgent0xaf5e4208
+
+.
+:transaction0x136a4f41ea776
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 4756324730000000000;
+	 prov:wasStartedBy :senderAgent0xc4c9bd18
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x800d5b6788271
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 997801000000000000;
+	 prov:wasStartedBy :senderAgent0x30be37d6
+	 prov:wasEndedBy :receiverAgent0x5401dbf7
+
+.
+:transaction0xf05d553281abb
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1100000000000000000;
+	 prov:wasStartedBy :senderAgent0x1300fd42
+	 prov:wasEndedBy :receiverAgent0x88160178
+
+.
+:transaction0x114c7bbe6253c
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 1339601000000000000;
+	 prov:wasStartedBy :senderAgent0x4773ec09
+	 prov:wasEndedBy :receiverAgent0x7ef35bb3
+
+.
+:transaction0x1b5990cef591f
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 53430660000000000;
+	 prov:wasStartedBy :senderAgent0x77f8d311
+	 prov:wasEndedBy :receiverAgent0x51597485
+
+.
+:transaction0x47e7a132bc7fa
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 109197717569063500;
+	 prov:wasStartedBy :senderAgent0xa9c7d31b
+	 prov:wasEndedBy :receiverAgent0xcd9625a2
+
+.
+:transaction0x7d037c889e3ee
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 10000000000000000000;
+	 prov:wasStartedBy :senderAgent0x9b1b97d7
+	 prov:wasEndedBy :receiverAgent0xfb527e6a
+
+.
+:transaction0xd0c21ce853da1
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 6315105140247040000;
+	 prov:wasStartedBy :senderAgent0x29e734ae
+	 prov:wasEndedBy :receiverAgent0xb9ee1e55
+
+.
+:transaction0x4e98f1d73df8f
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 99996606380247040000;
+	 prov:wasStartedBy :senderAgent0x2d234969
+	 prov:wasEndedBy :receiverAgent0xb9ee1e55
+
+.
+:transaction0x176e766509eed
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 5123000000000000;
+	 prov:wasStartedBy :senderAgent0x40f67c38
+	 prov:wasEndedBy :receiverAgent0x906d4e8e
+
+.
+:transaction0x96e6d88149347
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 5123000000000000;
+	 prov:wasStartedBy :senderAgent0x40f67c38
+	 prov:wasEndedBy :receiverAgent0xde6bdda6
+
+.
+:transaction0x7ead50a93fb2a
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 471151010000000000;
+	 prov:wasStartedBy :senderAgent0x4c4bd346
+	 prov:wasEndedBy :receiverAgent0x2d51db5b
+
+.
+:transaction0xc0b16b298a133
+	 a prov:Activity;
+	 prov:generated :block39160
+	 foaf:value 0;
+	 prov:wasStartedBy :senderAgent0x2f53fc0f
+	 prov:wasEndedBy :receiverAgent0x2f53fc0f
+
+.

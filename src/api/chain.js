@@ -11,8 +11,10 @@ const fetch = require('node-fetch');
 // setInterval(keep_running, 7000);
 // blockchain_test();
 // print_bytecode();
-create_full_block();
-
+// create_full_block();
+async function check_if_contract() {
+  let result = await contractModel.check_if_contract();
+}
 
 async function print_bytecode() {
   let options = {

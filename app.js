@@ -1,8 +1,9 @@
 let express = require('express');
 // var http=require("http");  
 
-let chain = require('./src/api/chain');
-let server = require('./src/api/server');
+let blockloop = require('./src/api/blockloop');
+// let chain = require('./src/api/chain');
+// let server = require('./src/api/server');
 
 
 let app = express();
@@ -36,8 +37,9 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/chain', chain)
-app.use('/server', server)
+app.use('/blockloop', blockloop)
+// app.use('/chain', chain)
+// app.use('/server', server)
 
 
 
